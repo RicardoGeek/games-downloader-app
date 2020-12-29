@@ -21,7 +21,7 @@ spec:
          environment: backend
      spec:
        containers:
-       - image: ricardogeek/games-backend:0.3.0
+       - image: ricardogeek/games-backend:0.4.0
          name: back
          env:
            - name: MONGO_HOST
