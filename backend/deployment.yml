@@ -23,5 +23,12 @@ spec:
        containers:
        - image: ricardogeek/games-backend:0.3.0
          name: back
+         env:
+           - name: MONGO_HOST
+             value: "107.178.220.217"
+           - name: MONGO_PORT
+             value: "27017"
+           - name: MONGO_DB
+             value: "games"
          ports:
-           - containerPort: 3000
+           - containerPort: 8888
