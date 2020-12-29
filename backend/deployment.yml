@@ -21,7 +21,7 @@ spec:
          environment: backend
      spec:
        containers:
-       - image: ricardogeek/games-backend:0.2.0
+       - image: ricardogeek/games-backend:0.3.0
          name: back
          ports:
            - containerPort: 3000
