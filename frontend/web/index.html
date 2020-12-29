@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Game Downloads</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>  
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="custom.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 pt-5">
+                <h1>Available Games</h1>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Download Count</th>
+                            <th>Download</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="games-table"></tbody>
+                </table>
+            </div>
+            <div class="col-md-12 pt-5">
+                <h2>Make a game</h2>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input class="form-control" id="game-name" />
+                </div>
+                <div class="form-group">
+                    <br/>
+                    <button class="btn btn-primary" id="create">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
