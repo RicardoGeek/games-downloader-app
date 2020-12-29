@@ -10,6 +10,13 @@ app.use(cors())
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
+let allowCrossDomain = function(req, res, next) {
+    res.header('Access-Control-Allow-Origin', '*')
+    res.header('Access-Control-Allow-Headers', '*')
+    next()
+}
+app.use(allowCrossDomain)
+
 const host = process.env.MONGO_HOST
 const port = process.env.MONGO_PORT
 const database = process.env.MONGO_DB
